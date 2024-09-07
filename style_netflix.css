@@ -1,0 +1,80 @@
+/* Styling the Netflix HomePage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    background-image: url("./netflix_bg_img.png");
+}
+
+#icon {
+    width: 150px;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.shadow {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+
+.sign-in {
+    background: red;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 14px;
+}
+
+#button1 {
+    margin-right: 12px;
+}
+
+#buttons {
+    padding: 30px;
+    width: 60%;
+    text-align: right;
+}
+
+#image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80%;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 0;
+}
+#p1 {
+    font-size: 28px;
+}
+#p2 {
+    font-size: 23px;
+}
+p {
+    margin: 13px;
+    font-weight: 400;
+}
