@@ -30,7 +30,8 @@
 
       h1 {
         font-size: xx-large;
-        margin-left: 10px;
+        margin-inline: 10px;
+        margin-block: 10px;
       }
 
       #sub-box-1 {
@@ -67,12 +68,19 @@
         border: 3px solid red;
         padding: 7px;
       }
+
+      #sub-box-2 p, li {
+        margin-inline: 10px;
+        margin-block: 10px;
+      }
     </style>
   </head>
   <body>
     <section>
       <div id="sub-box-1" class="sub-box"><h1>I'am a box</h1></div>
-      <div class="sub-box"></div>
+      <div id="sub-box-2" class="sub-box">
+        <p>I'm also a box with some text in it Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae esse adipisci hic consequuntur commodi, soluta sunt illo corporis nesciunt quae tempore laboriosam ab nihil ad maxime sint, fugit earum!</p>
+      </div>
       <div id="sub-box-3" class="sub-box">
         <ul>
           <div class="item"><li>this list is a box</li></div>
