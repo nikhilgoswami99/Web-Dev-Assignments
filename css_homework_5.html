@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px auto;
+        border: 3px solid red;
+        height: 460px;
+        width: 600px;
+      }
+
+      .sub-box {
+        border: 3px solid red;
+        margin: 20px;
+        height: 120px;
+        width: 95%;
+      }
+
+      h1 {
+        font-size: xx-large;
+        margin-left: 10px;
+      }
+
+      #sub-box-1 {
+        height: 60px;
+      }
+
+      .item {
+        border: 2px solid red;
+        height: 40px;
+        width: 550px
+      }
+
+      #sub-box-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        
+      }
+
+      p {
+        margin: 20px 0;
+        width: 95%
+      }
+
+      button {
+        border: 3px solid red;
+        padding: 7px;
+        background-color: white;
+      }
+
+      a {
+        border: 3px solid red;
+        padding: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="sub-box-1" class="sub-box"><h1>I'am a box</h1></div>
+      <div class="sub-box"></div>
+      <div id="sub-box-3" class="sub-box">
+        <ul>
+          <div class="item"><li>this list is a box</li></div>
+          <div class="item"><li>and all the list items in it are boxes</li></div>
+        </ul>
+      </div>
+        <p>even <button>buttons</button> and <a href="">links</a> are boxes</p>
+    </section>
+  </body>
+</html>
