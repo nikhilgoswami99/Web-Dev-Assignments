@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar styling  */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  padding-inline: 20px;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  height: 35px;
+  border: none;
+}
+
+input {
+  border: 1px solid;
+  border-color: lightgray;
+  height: 35px;
+  width: 500px;
+  padding-left: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.youtube-logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Sidebar styling */
+
+.sidebar {
+  height: 100%;
+  width: 18%;
+  background-color: white;
+}
+
+.sidebar-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 25px;
+  padding-block: 20px;
+}
+
+.sidebar-1 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
+}
+
+.sidebar-2 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 25px;
+  padding-block: 20px;
+}
+
+.sidebar span {
+  font-size: small;
+}
+
+/* Styling main content */
+
+main {
+  display: flex;
+  height: calc(100vh - 70px);
+  width: 100vw;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(249, 249, 249);
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+.video {
+  width: 310px;
+  padding-bottom: 30px;
+}
+
+.video-thumbnail {
+  height: 170px;
+  width: 100%;
+}
+
+.video-thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.author img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.video-details {
+  display: flex;
+  margin-top: 5px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.heading {
+    margin-inline: 50px;
+    margin-block: 20px;
+}
