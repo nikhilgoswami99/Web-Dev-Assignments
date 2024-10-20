@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        .content {
+            margin-top: 50px;
+            margin-inline: auto;
+            width: 550px;
+            height: 300px;
+            box-shadow: 0px 4px 15px grey;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: rgb(1, 122, 255);
+            border: none;
+            color: white;
+            font-weight: bold;
+            height: 35px;
+            width: 150px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Age Calculator</h1>
+        <div class="form">
+            <label for="age">Enter your date of birth</label>
+            <input type="date" id="age">
+            <button>Calculate Age</button>
+            <p>Your age is 21 years old</p>
+        </div>
+    </div>
+    <script src="./age_calculator.js"></script>
+</body>
+</html>
