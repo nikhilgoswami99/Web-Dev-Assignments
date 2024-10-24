@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Tilt Neon", sans-serif;
+        font-weight: bold;
+      }
+
+      body {
+        display: flex;
+      }
+
+      textarea {
+        height: 200px;
+        width: 500px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        outline: none;
+      }
+
+      .left-container {
+        background-color: rgb(210, 220, 230);
+        padding-top: 10%;
+        padding-left: 5%;
+        width: 50vw;
+        height: 100vh;
+      }
+
+      .notes-container {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+      }
+
+      input {
+        cursor: pointer;
+        position: relative;
+        bottom: 90px;
+      }
+
+      .buttons {
+        width: 500px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      #add {
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        cursor: pointer;
+        padding-inline: 7%;
+        padding-block: 3%;
+        border-radius: 20px;
+        background: linear-gradient(to right, #ed709a 0%, #ec8870 100%);
+        border: none;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      #add:active {
+        transform: translateY(2px);
+      }
+
+      #clear:active {
+        transform: translateY(2px);
+      }
+
+      #clear {
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        cursor: pointer;
+        padding-inline: 11%;
+        padding-block: 3%;
+        border-radius: 20px;
+        background: linear-gradient(to right, #ed709a 0%, #ec8870 100%);
+        border: none;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        margin-top: 5%;
+      }
+
+      #p {
+        margin-top: 35%;
+      }
+
+      .div-container {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-container">
+      <textarea
+        placeholder="// Write a note here"
+        name=""
+        id="txt_area"
+      ></textarea>
+      <input value="#00ffa1" type="color" id="color" />
+      <div class="buttons">
+        <button id="add">Add Notes</button>
+        <button id="clear">Clear</button>
+      </div>
+    </div>
+    <div class="notes-container">
+      <h1>Your Notes</h1>
+      <p id="p">You have not added a note here</p>
+      <div class="div-container"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
