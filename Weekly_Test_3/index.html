@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Test 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 400px;
+            width: 650px;
+        }
+
+        .products {
+            border: 5px solid rgb(168, 167, 167);
+            height: 70%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cart-items {
+            border: 6px solid gray;
+            height: 70%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .prod-1, .prod-2, .prod-3 {
+            color: white;
+            padding: 10px;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgb(168, 167, 167);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .add, .remove {
+            width: 50px;
+            font-weight: bold;
+            font-size: larger;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="products">
+            <h2>Products</h2>
+            <div class="prod-1">
+                <span>Product-1</span>
+                <span>100</span>
+                <button class="remove">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+            </div>
+            <div class="prod-2">
+                <span>Product-2</span>
+                <span>200</span>
+                <button class="remove">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+            </div>
+            <div class="prod-3">
+                <span>Product-3</span>
+                <span>300</span>
+                <button class="remove">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+            </div>
+        </div>
+        <div class="cart-items">
+            <h2>Cart</h2>
+        </div>
+    </div>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./index_2.js"></script>
+</body>
+</html>
