@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press Display</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Simple styling for consistency */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#key-display, #keycode-display, #key-history {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    font-size: 1.2em;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Key Press Display</h1>
+        <div id="key-display">Press any key</div>
+        <div id="keycode-display">Key Code will appear here</div>
+        <div id="key-history">Key History will appear here</div>
+        <audio id="keypress-sound" src="keypress-sound.mp3"></audio>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
