@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+        }
+        .container {
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .hours, .mins, .secs {
+            height: 80px;
+            width: 100px;
+            font-size: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clock div {
+            background-color: rgb(136, 112, 189);
+        }
+
+        .clock {
+            display: flex;
+            gap: 10px;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: small;
+            background-color: rgba(41, 29, 131, 0.7);
+            padding: 8px;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+        }
+
+        .am_pm {
+            position: relative;
+            left: 200px;
+            bottom: 35px;
+            color: white;
+            background-color: rgba(22, 114, 4, 0.7);
+            height: 30px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2>Digital Clock</h2>
+        <div class="clock">
+            <div>
+                <span class="hours"></span>
+                <span class="text">Hours</span>
+            </div>
+            <div>
+                <span class="mins"></span>
+                <span class="text">Minutes</span>
+            </div>
+            <div>
+                <span class="secs"></span>
+                <span class="text">Seconds</span>
+            </div>
+        </div>
+        <span class="am_pm"></span>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
