@@ -26,7 +26,7 @@ The application fetches and displays a list of book categories. When a category 
 A video explanation of the project has been created to demonstrate its features and functionality. It covers how users can toggle dark mode, sign up and log in, view book details, and navigate through different book categories.
 
 ## Submission
-- Hosted link: https://kishlaychandan.github.io/weekly-test-5/
+- Hosted link: https://nikhilgoswami99.github.io/Web-Dev-Assignments/Weekly%20Test%205/index.html
 
 ## Conclusion
 This project showcases the implementation of various functionalities taught in the class, providing a comprehensive solution for the Weekly Test - 5 assignment. The user-friendly interface, dark mode, and effective book detail display enhance the user experience, making it easier for users to find and view book details.
