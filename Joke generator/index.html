@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dad Jokes</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #c450b5, #c393d1) ;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 5px 10px  rgba(0,0,0,0.8);
+    @media (max-width: 600px) {
+        font-size: 1.5rem;
+    }
+}
+
+#dad-joke-container{
+    width: 80%;
+    max-width: 80%;
+    height: 300px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10rem;
+    background:linear-gradient(to left, #df90e3, #df90e3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+   
+    @media (max-width: 450px){
+        width: 95%;
+        height: fit-content;
+        padding: 1rem 0.5rem;
+    }
+
+    @media (max-width: 245px){
+        width: 98%;
+        height: fit-content;
+    }
+
+}
+#dad-joke{
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2f1973;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+   
+    &:hover{
+        color: #f00;
+    }
+    @media (max-width: 600px){
+        font-size: 1.1rem;
+    }
+}
+#get-dad-joke{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: #45a049;
+    }
+    @media (max-width: 600px){
+        padding: 8px 16px;
+
+        margin-top: 1.8rem;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    
+    
+    <div id="dad-joke-container">
+        <h1>Dad Jokes Generator</h1>
+        <div id="dad-joke">
+            <!-- Joke will be displayed here -->
+             
+        </div>
+        <button id="get-dad-joke">Get Another Joke</button>
+        <audio src="../Audio/pick-92276.mp3" id="jokesound"></audio>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
