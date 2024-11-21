@@ -3,7 +3,7 @@
 A responsive and user-friendly movie search application that allows users to search for movies, view search results with pagination, and explore detailed movie information.
 
 ## 🚀 Hosted Link
-[Movie Search Application]
+https://nikhilgoswami99.github.io/Web-Dev-Assignments/Movie%20Search%20Project/index.html
 
 ## 🎯 Features
 
