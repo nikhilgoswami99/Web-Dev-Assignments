@@ -110,7 +110,11 @@ function userData(data) {
 
       const data = await response.json();
 
+      console.log(data);
+      
+
       const name = document.createElement("h5");
+      const plot = document.createElement("h5");
       const director = document.createElement("h5");
       const genre = document.createElement("h5");
       const rating = document.createElement("h5");
@@ -129,6 +133,8 @@ function userData(data) {
       image.src = element.Poster;
       image.className = "movie_image2";
       div.className = "moreInfo";
+      plot.className = "plot";
+      plot.innerText = `Plot :- ${data.Plot}`;
 
       div.appendChild(crossBtn);
       div.appendChild(image);
@@ -137,6 +143,7 @@ function userData(data) {
       div.appendChild(genre);
       div.appendChild(type);
       div.appendChild(rating);
+      div.appendChild(plot);
 
       container.appendChild(div);
 
