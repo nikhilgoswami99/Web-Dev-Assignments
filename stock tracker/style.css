@@ -38,6 +38,11 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    transform: translateY(3px
+    );
+}
+
 .stock-info, .graph-section, .stock-table {
     margin: 20px 0;
 }
