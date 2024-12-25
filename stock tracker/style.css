@@ -10,7 +10,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #333;
+    background-color: #6b0096;
     color: white;
     padding: 20px;
 }
@@ -32,7 +32,7 @@ input, button {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #b91e0a;
     color: white;
     border: none;
     cursor: pointer;
