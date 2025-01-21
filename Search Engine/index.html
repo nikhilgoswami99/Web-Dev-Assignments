@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Search Engine</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ultimate Search Gateway</h1>
+      <p>Search across multiple platforms effortlessly</p>
+    </header>
+    <main>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Enter your prompt">
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="history">
+        <h3>Search History</h3>
+        <ul id="history-list"></ul>
+      </div>
+      <div class="button-group">
+        <button class="tab-btn" data-target="google-results">Google</button>
+        <button class="tab-btn" data-target="unsplash-results">Unsplash</button>
+        <button class="tab-btn" data-target="wikipedia-results">Wikipedia</button>
+        <button class="tab-btn" data-target="gemini-results">Gemini</button>
+      </div>
+      <div class="results">
+        <section id="google-results" class="tab-content active">
+          <h2>Google Search</h2>
+          <div class="content"></div>
+        </section>
+        <section id="unsplash-results" class="tab-content">
+          <h2>Unsplash Images</h2>
+          <div class="content"></div>
+        </section>
+        <section id="wikipedia-results" class="tab-content">
+          <h2>Wikipedia</h2>
+          <div class="content"></div>
+        </section>
+        <section id="gemini-results" class="tab-content">
+          <h2>Gemini</h2>
+          <div class="content"></div>
+        </section>
+      </div>
+      <!-- Add the history list below -->
+      
+    </main>
+  </div>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
